@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me | Titus Muthama</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="CSS/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #0d6efd;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    #about-header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+    #about-header h1 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    /* Content Sections */
+    .section-title {
+      color: #0d6efd;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border: 4px solid #0d6efd;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Titus Muthama</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section id="about-header">
+    <div class="container" data-aos="fade-up">
+      <h1>About Me</h1>
+      <p class="lead">Get to know more about my background, values, and professional journey.</p>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Personal & Professional Profile</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center" data-aos="fade-right">
+          <img src="assets/titus.jpg" alt="Titus Muthama" class="profile-img">
+        </div>
+        <div class="col-md-8" data-aos="fade-left">
+          <p class="lead">
+            My name is <strong>Titus Muthama</strong>, a dedicated ICT Trainer with a passion for technology, education, and innovation.
+            I hold a <strong>Bachelor’s Degree in Information and Communication Technology</strong> from 
+            <strong>KCA University</strong> and a <strong>Diploma in Technical Trainer Education</strong> from the <strong>Kenya School of TVET</strong>.
+          </p>
+          <p>
+            I have over 4 years of professional experience teaching ICT and developing digital learning solutions at 
+            <strong>Kips Technical College</strong>. My work focuses on bridging the gap between theoretical knowledge 
+            and practical, hands-on digital skills for students and professionals.
+          </p>
+          <p>
+            I am deeply passionate about empowering the next generation of innovators through technology, fostering creativity, 
+            and promoting lifelong learning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card shadow-sm p-4 text-center">
+            <h5 class="fw-bold text-primary">Programming</h5>
+            <p>Java, Python, C#, JavaScript, HTML, CSS</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card shadow-sm p-4 text-center">
+            <h5 class="fw-bold text-primary">Database & Systems</h5>
+            <p>MySQL, PostgreSQL, Distributed Systems Design</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card shadow-sm p-4 text-center">
+            <h5 class="fw-bold text-primary">Networking & Security</h5>
+            <p>LAN/WAN Configuration, Cybersecurity Awareness, Data Protection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Philosophy -->
+  <section class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Teaching Philosophy</h2>
+      <p class="text-center px-md-5">
+        I believe that effective education blends theory with hands-on experience. My teaching philosophy is centered on 
+        empowering learners through <strong>project-based learning</strong>, <strong>critical thinking</strong>, 
+        and <strong>digital creativity</strong>.  
+        I strive to make ICT education practical, interactive, and relevant to the current job market and emerging technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Professional Interests</h2>
+      <ol class="list-group list-group-flush shadow-sm">
+        <li class="list-group-item">🔹 Educational Technology Integration</li>
+        <li class="list-group-item">🔹 Software Development and Automation</li>
+        <li class="list-group-item">🔹 Cybersecurity and Data Privacy</li>
+        <li class="list-group-item">🔹 Research in ICT and Digital Transformation</li>
+        <li class="list-group-item">🔹 Mentorship and Youth Empowerment through ICT</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Titus Muthama. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="JS/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
